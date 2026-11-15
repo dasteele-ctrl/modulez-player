@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101719">
-  <meta name="description" content="Modulez Player — a colorful, customizable music player for classic modules, chiptunes, MIDI, SID, and more on Linux.">
+  <meta name="description" content="Modulez Player — a customizable Linux music player for tracker modules, chiptunes, MIDI, SID and worldwide internet radio.">
   <title>Modulez Player — Give your music a new dimension</title>
   <style>
     :root { color-scheme: dark; --bg:#101719; --panel:#1B282C; --ink:#DCE8E5; --mint:#72D6BD; --violet:#A18BD4; --muted:#9db1ae; }
@@ -33,8 +33,9 @@
     .secondary { border:1px solid #54716e; background:#ffffff08; }
     .smallnote { color:var(--muted); font-size:.85rem; margin-top:16px; }
     .shot-frame { position:relative; max-width:980px; margin:60px auto 0; padding:10px; border:1px solid #51756e; border-radius:19px; background:#223338; box-shadow:0 28px 90px #0008,0 0 70px #72d6bd15; }
-    .shot { width:100%; max-height:570px; overflow:hidden; border-radius:10px; background:linear-gradient(135deg,#31454a,#111b1e); }
+    .shot { width:100%; overflow:hidden; border-radius:10px; background:linear-gradient(135deg,#31454a,#111b1e); }
     .shot img { width:100%; height:auto; display:block; object-fit:cover; object-position:top; }
+    .shot-caption { margin:12px 0 0; color:var(--muted); font-size:.88rem; }
     .shot-placeholder { display:none; min-height:300px; padding:60px 25px; align-items:center; justify-content:center; flex-direction:column; text-align:center; gap:10px; }
     .shot-placeholder strong { font-size:2rem; color:var(--mint); }
     .shot-placeholder span { color:var(--muted); max-width:430px; }
@@ -67,29 +68,32 @@
   </nav></header>
   <main id="top">
     <div class="hero wrap">
-      <span class="eyebrow">Linux music player · v1.7.7</span>
+      <span class="eyebrow">v1.8.0 · The Streaming Update</span>
       <h1>Old-school sounds.<br><em>A whole new spectrum.</em></h1>
-      <p class="lead">Rediscover tracker modules, chiptunes, MIDI and classic computer music with rich visualizers, customizable colors, and a modern desktop experience.</p>
+      <p class="lead">Rediscover tracker modules, chiptunes, MIDI and classic computer music — now with worldwide internet radio, rich visualizers, customizable colors and a modern desktop experience.</p>
       <div class="buttons"><a class="button primary" href="https://github.com/dasteele-ctrl/xmp-module-player/releases/latest">↓ Download for Linux</a><a class="button secondary" href="#features">Explore features</a></div>
       <p class="smallnote">Free and open source · Distributed as an AppImage</p>
       <div class="shot-frame"><div class="shot">
-        <img src="modulez-player-1.7.7.png" alt="Modulez Player 1.7.7 interface showing the playlist and visualizer" onerror="this.hidden=true;this.nextElementSibling.style.display='flex'">
-        <div class="shot-placeholder"><strong>MODULEZ PLAYER</strong><span>Place <code>modulez-player-1.7.7.png</code> beside this page to display the actual application screenshot.</span></div>
-      </div></div>
+        <img src="modulez-player-1.8.0.png" alt="Modulez Player 1.8.0 Radio tab playing Robotto by JosSs on Nectarine" onerror="this.hidden=true;this.nextElementSibling.style.display='flex'">
+        <div class="shot-placeholder"><strong>MODULEZ PLAYER</strong><span>Place <code>modulez-player-1.8.0.png</code> beside this page to display the actual application screenshot.</span></div>
+      </div><p class="shot-caption">On the air: JosSs — Robotto, playing on Nectarine Demoscene Radio. <a href="modulez-player-1.8.0.png">View full screenshot</a>.</p></div>
     </div>
     <section id="features" class="wrap">
-      <div class="section-head"><h2>Everything your collection deserves.</h2><p>From vintage tracker tunes to MIDI arrangements, Modulez Player brings an eclectic music library together in one customizable player.</p></div>
+      <div class="section-head"><h2>Everything your collection deserves.</h2><p>From vintage tracker tunes to worldwide radio stations, Modulez Player brings local music and live streams together in one customizable player.</p></div>
       <div class="features">
+        <article class="feature"><div class="glyph" aria-hidden="true">◉</div><h3>Internet radio</h3><p>Listen to ten built-in demoscene and retro stations, or discover stations worldwide with Radio Browser.</p></article>
+        <article class="feature"><div class="glyph" aria-hidden="true">★</div><h3>Your favorite stations</h3><p>Save favorites, add your own stream URLs and keep your station collection between sessions.</p></article>
+        <article class="feature"><div class="glyph" aria-hidden="true">↻</div><h3>Keep the music playing</h3><p>Interrupted radio streams reconnect automatically with increasing retry delays.</p></article>
         <article class="feature"><div class="glyph" aria-hidden="true">♫</div><h3>Classic format playback</h3><p>Enjoy tracker modules, Amiga-era formats, SID and ZX Spectrum tunes, plus MIDI with SoundFont support.</p></article>
         <article class="feature"><div class="glyph" aria-hidden="true">◉</div><h3>Music you can see</h3><p>Watch waveforms, scopes and immersive visualizations, including fullscreen visualizer mode.</p></article>
         <article class="feature"><div class="glyph" aria-hidden="true">☷</div><h3>Playlists made easy</h3><p>Open folders, search tracks live and choose repeat modes from the playlist context menu.</p></article>
-        <article class="feature"><div class="glyph" aria-hidden="true">◈</div><h3>Make it yours</h3><p>Enjoy rounded controls, a refined interface and customizable colors, from subdued charcoal to vibrant accents.</p></article>
+        <article class="feature"><div class="glyph" aria-hidden="true">◈</div><h3>Make it yours</h3><p>Enjoy modern rounded windows and dialogs, a collapsible sidebar and customizable colors, from subdued charcoal to vibrant accents.</p></article>
         <article class="feature"><div class="glyph" aria-hidden="true">≋</div><h3>Shape the sound</h3><p>Fine-tune playback with a ten-band equalizer and presets.</p></article>
         <article class="feature"><div class="glyph" aria-hidden="true">↧</div><h3>More ways to explore</h3><p>Download and play music directly from online archives, manage SoundFonts, explore the HVSC collection and export audio to WAV.</p></article>
       </div>
       <div class="formats" aria-label="Supported music families"><span>MOD / XM / IT / S3M</span><span>Amiga</span><span>SID / PSID / RSID</span><span>ZX Spectrum</span><span>MIDI</span><span>Chiptunes</span><span>MP3 / FLAC / OGG / WAV</span></div>
     </section>
-    <section id="download" class="wrap"><div class="download"><div><span class="eyebrow">Ready to listen?</span><h2>Let the modules play.</h2><p>Get the latest Linux AppImage from GitHub Releases. Want to look under the hood? The source code is available there too.</p></div><a class="button primary" href="https://github.com/dasteele-ctrl/xmp-module-player/releases/latest">Get Modulez Player ↗</a></div></section>
+    <section id="download" class="wrap"><div class="download"><div><span class="eyebrow">Ready to listen?</span><h2>Let the modules play.</h2><p>Get the latest Linux AppImage from GitHub Releases. Version 1.8.0 brings internet radio and a modern interface, with built-in delta updates for future releases.</p></div><a class="button primary" href="https://github.com/dasteele-ctrl/xmp-module-player/releases/latest">Get Modulez Player ↗</a></div></section>
   </main>
   <footer><div class="wrap foot"><span>© 2026 Modulez Player. Made for the love of music.</span><span><a href="https://github.com/dasteele-ctrl/xmp-module-player">GitHub project</a> · <a href="https://github.com/dasteele-ctrl/xmp-module-player/releases">Releases</a></span></div></footer>
 </body>
